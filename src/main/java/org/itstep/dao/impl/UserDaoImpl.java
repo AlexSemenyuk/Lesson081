@@ -20,7 +20,6 @@ public class UserDaoImpl implements UserDao  {
 
     public UserDaoImpl() {
             dbUtils = DbUtils.getInstance();
-//            dbUtils.init(url, username, password);
     }
 
     @Override

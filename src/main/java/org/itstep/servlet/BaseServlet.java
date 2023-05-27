@@ -5,23 +5,21 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import org.itstep.service.PostService;
 import org.itstep.service.UserService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public abstract class BaseServlet extends HttpServlet {
     protected UserService userService;
     protected PostService postService;
-    //    protected BlogDao blogDao;
-//    protected PostDao postDao;
-//    protected UserDao userDao;
+
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-        String url = "jdbc:mariadb://localhost/myblog";
-        String username = "root";
-        String password = "";
-//        taskDao = new TaskDaoImpl(url, username, password);
-//        blogDao = new BlogDaoImpl("jdbc:mariadb://localhost/myblog", "root", "");
-//        userDao = new UserDaoImpl(url, username, password);
-//        postDao = new PostDaoImpl(url, username, password);
+
+//        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+//        userService = context.getBean("UserService", UserService.class);
+//        postService = context.getBean("PostService", PostService.class);
+
         userService = new UserService();
         postService = new PostService();
     }

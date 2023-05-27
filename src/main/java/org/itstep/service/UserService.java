@@ -6,9 +6,18 @@ import org.itstep.dao.impl.UserDaoImpl;
 import org.itstep.data.User;
 
 public class UserService {
-    protected UserDao userDao;
+//    protected UserDao userDao;
+    private UserDao userDao;
     public UserService() {
         this.userDao = new UserDaoImpl();
+    }
+
+    public UserDao getUserDao() {
+        return userDao;
+    }
+
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
     }
 
     public User findUserByLoginAndPassword (String login, String password){

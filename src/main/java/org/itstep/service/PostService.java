@@ -15,13 +15,31 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class PostService {
-    protected PostDao postDao;
-    protected UserService userService;
-    protected final int amountPostsOnPage = 4;
+//    protected PostDao postDao;
+//    protected UserService userService;
+    private PostDao postDao;
+    private UserService userService;
+    protected static final int amountPostsOnPage = 4;
 
     public PostService() {
         this.postDao = new PostDaoImpl();
-        userService = new UserService();
+        this.userService = new UserService();
+    }
+
+    public PostDao getPostDao() {
+        return postDao;
+    }
+
+    public void setPostDao(PostDao postDao) {
+        this.postDao = postDao;
+    }
+
+    public UserService getUserService() {
+        return userService;
+    }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
     }
 
     public void addPostToDb(String titleInput, User userSession, Part fileInput, String contentInput, String draftInput, Path pathOfContext) {

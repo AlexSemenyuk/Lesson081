@@ -19,7 +19,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class PostDaoImpl implements PostDao {
     final DbUtils dbUtils;
-//    protected UserService userService;
+
 
     private final static String SELECT_ALL_POSTS = "SELECT * FROM posts;";
     private final static String SELECT_CURRENT_POSTS =
@@ -33,7 +33,6 @@ public class PostDaoImpl implements PostDao {
     public PostDaoImpl() {
         dbUtils = DbUtils.getInstance();
 //        dbUtils.init(url, username, password);
-//        userService = new UserService();
     }
 
     @Override
