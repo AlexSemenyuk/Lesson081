@@ -19,6 +19,7 @@ public class PostService {
 //    protected UserService userService;
     private PostDao postDao;
     private UserService userService;
+
     protected static final int amountPostsOnPage = 4;
 
     public PostService() {

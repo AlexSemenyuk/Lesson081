@@ -170,7 +170,7 @@
 <%--<script src="resources/js/scripts.js"></script>--%>
 <script src="<c:url value="/resources/js/scripts.js"/>" ></script>
 <script>
-  location.reload();
+  // location.reload();
 </script>
 </body>
 </html>

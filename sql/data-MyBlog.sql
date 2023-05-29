@@ -27,7 +27,7 @@ VALUES ('Garden', '16.05.2023 11:22:38', 1, 'resources/images/garden - 1.jpg', '
        ('General Grant Tree', '24.05.2023 21:16:41', 4, 'resources/images/General Grant Tree - 1.jpg', '<p>only photo</p>', 2),
        ('Generals Highway', '24.05.2023 21:18:19', 4, 'resources/images/Generals Highway - 1.jpg', '<p>only photo</p>', 2),
        ('Canyon', '24.05.2023 21:20:10', 4, 'resources/images/Canyon - 1.jpg', '<p>only photo</p>', 2),
-       ('Narrows gorge', '24.05.2023 21:22:17', 4, 'resources/images/Narrows - 1.jpg', '<p>only photo</p>', 2),
+       ('Narrows gorge', '24.05.2023 21:22:17', 4, 'resources/images/Narrows - 1.jpg', '<p>only photo</p>', 2);
 
 select * from users where login='admin' and password='admin';
 SELECT * FROM users WHERE login = 'admin' and password = 'admin';
