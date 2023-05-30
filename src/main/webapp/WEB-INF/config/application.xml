@@ -13,7 +13,7 @@
         <property name="UserDao" ref="userDaoImpl"/>
     </bean>
     <bean class="org.itstep.service.PostService" id="postService">
-        <property name="postDao" ref="postDaoImpl"/>
-        <property name="userService" ref="userService"/>
+        <property name="PostDao" ref="postDaoImpl"/>
+        <property name="UserService" ref="userService"/>
     </bean>
 </beans>

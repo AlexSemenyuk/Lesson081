@@ -15,8 +15,6 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class PostService {
-//    protected PostDao postDao;
-//    protected UserService userService;
     private PostDao postDao;
     private UserService userService;
 

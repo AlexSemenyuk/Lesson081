@@ -6,7 +6,6 @@ import org.itstep.dao.impl.UserDaoImpl;
 import org.itstep.data.User;
 
 public class UserService {
-//    protected UserDao userDao;
     private UserDao userDao;
     public UserService() {
         this.userDao = new UserDaoImpl();

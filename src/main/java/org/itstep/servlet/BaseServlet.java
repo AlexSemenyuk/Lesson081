@@ -18,7 +18,6 @@ public abstract class BaseServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-//        Path path = Path.of("e:/JAVA/Projects/GitHub Homeworks/Lesson081/src/main/webapp/WEB-INF/config/application.xml");
         ApplicationContext context = new FileSystemXmlApplicationContext("e:/JAVA/Projects/GitHub Homeworks/Lesson081/src/main/webapp/WEB-INF/config/application.xml");
         userService = context.getBean("userService", UserService.class);
         postService = context.getBean("postService", PostService.class);
